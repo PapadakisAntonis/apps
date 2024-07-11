@@ -1,5 +1,5 @@
-shiny.R: Creates shiny apps from seurat objects
+shiny: Creates shiny apps from seurat objects
 
-pds.R: Calculates PDS score
+pds: Calculates PDS score
 
-psupertime.R: Runs supervised pseudotime analysis 
+psupertime: Runs supervised pseudotime analysis 
