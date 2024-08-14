@@ -113,10 +113,10 @@ server <- function(input, output, session) {
   
   output$utilitiesConfirmExport <- downloadHandler(
     filename = function() { 
-      paste(input$uploadRdsprojectID, Sys.Date(), ".zip", sep="")
+      paste(input$uploadRdsprojectID, Sys.Date(), ".RDS", sep="")
     },
     content = function(file) {
-      save(seurat_object,file=file)
+      saveRDS(seurat_object,file=file)
     })
 }
 shinyApp(ui = ui, server = server)
